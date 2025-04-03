@@ -1,0 +1,190 @@
+/* courses offered */
+
+.single-course {
+    width: 100%;
+    height: 100%;
+    background: var(--clr-white);
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow-light);
+    transition: var(--transition);
+}
+
+.single-course:hover {
+    transform: translateY(-2px) scale(1.002);
+    box-shadow: var(--box-shadow-dark);
+}
+
+.single-course .img-container {
+    aspect-ratio: 355/250;
+    overflow: hidden;
+}
+
+.single-course .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.single-course .course-title p {
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--clr-primary-light);
+    text-transform: capitalize;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width:992px) {
+    .single-course .img-container {
+        aspect-ratio: 396/300;
+    }
+
+    .single-course:hover img {
+        transform: scale(1.05) rotateZ(2deg);
+    }
+}
+
+
+.three-col-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media screen and (min-width:772px) {
+    .three-col-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .three-col-layout {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* colleges layout styles */
+
+.each-college {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow-light);
+    transition: var(--transition);
+    background: var(--clr-white);
+}
+
+.each-college:hover {
+    transform: translateY(-2px) scale(1.002);
+    box-shadow: var(--box-shadow-dark);
+}
+
+.each-college .img-container {
+    aspect-ratio: 355/250;
+    position: relative;
+}
+
+.each-college .image-container .share-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+}
+
+.each-college .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.each-college .college-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.each-college .college-info .college-title {
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--clr-primary-light);
+}
+
+.each-college .college-info .desc {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+.each-college .college-info .address {
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--clr-primary-light);
+}
+
+@media screen and (min-width:992px) {
+    .each-college .image-container {
+        aspect-ratio: 396/250;
+    }
+}
+
+
+/* facilities styles */
+
+.single-facilites {
+    width: 100%;
+    box-shadow: var(--box-shadow-light);
+    background: var(--clr-white);
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.single-facilites:hover {
+    box-shadow: var(--box-shadow-dark);
+    transform: translate(-2px) scale(1.002);
+}
+
+.single-facilites .image-container {
+    aspect-ratio: 355/250;
+    overflow: hidden;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.single-facilites .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.single-facilites .facilities-info .heading {
+    font-size: 22px;
+    color: var(--clr-primary-light);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 14px;
+}
+
+.single-facilites .facilities-info .desc {
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+
+}
